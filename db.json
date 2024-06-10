@@ -1,9 +1,4 @@
 {
-    "product":[{
-        "img":"https://www.recetasnestlecam.com/sites/default/files/srh_recipes/983eb0eb3489256c6206a9549f7fa6c0.jpg",
-        "name": "Carne Asada",
-        "price": "$4500",
-        "description": "carne muy rica",
-        "id": 1
-    }]
+    "productos": []
+    
 }

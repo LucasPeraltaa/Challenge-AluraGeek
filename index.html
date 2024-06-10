@@ -1,14 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura Geek</title>
+
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="icon" href="./img/img-titulo.png" type="image/png">
 </head>
 <body>
+
     <header>
-        
+
+        <img src="./img/img-titulo.png" alt="imagen titulo">
+
+        <h1>Mi Catalogo</h1>
+
     </header>
+
+    <main>
+        <section class="lista-productos">
+
+            <h2>Productos disponibles</h2>
+
+            <div class="productos-disponibles" data-product>
+
+            </div>
+
+        </section>
+
+        <section class="agregar-productos">
+
+            <h2>Agregar producto</h2>
+
+            <div class="formulario-productos" data-form>
+
+                <form class="form-agregar-productos">
+
+                    <input type="text"placeholder="Ingresa un nombre" class="nombre-producto" data-nombre required>
+                    <input type="text"placeholder="Ingresa un precio" class="precio-producto" data-precio required>
+                    <input type="url" placeholder="Ingresa la URL de la imagen" class="url-img-producto" data-imagen required>
+
+                    <div class="btn-productos">
+                        <button class="btn-enviar" type="submit">Cargar</button>
+                        <button class="btn-vaciar" type="reset">Vaciar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© Desarrollado por Lucas Peralta - 2024</p>
+    </footer>
+    <script type="module" src="./js/main.js"></script>
 </body>
 </html>
