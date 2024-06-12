@@ -1,4 +1,19 @@
 {
-    "productos": []
+    "productos": [
+
+    {
+        "id": 1,
+        "nombre": "Frutos secos",
+        "precio": "$1200",
+        "imagen": "https://acdn.mitiendanube.com/stores/001/157/846/products/delicioso-mix-de-frutos-secos-especial-muy-completo-d_nq_np_645997-mla26481477271_122017-f1-d45a81489e11c0475015871829056304-1024-1024.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Frutos mojados",
+        "precio": "$1500",
+        "imagen": "https://acdn.mitiendanube.com/stores/001/157/846/products/delicioso-mix-de-frutos-secos-especial-muy-completo-d_nq_np_645997-mla26481477271_122017-f1-d45a81489e11c0475015871829056304-1024-1024.jpg"
+    
+    }
+]
     
 }

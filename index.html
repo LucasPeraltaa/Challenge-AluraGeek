@@ -28,9 +28,7 @@
 
             <h2>Productos disponibles</h2>
 
-            <div class="productos-disponibles" data-product> <!--permiten almacenar información adicional sobre un elemento HTML cualquiera sin tener que recurrir a artilugios tales como la utilización de atributos no estándar, propiedades adicionales en el DOM o Node.-->
-
-            </div>
+            <div class="productos-disponibles" data-product></div>
 
         </section>
 
@@ -38,13 +36,13 @@
 
             <h2>Agregar producto</h2>
 
-            <div class="formulario-productos" data-form>
+            <div class="formulario-productos" data-formulario>
 
-                <form class="form-agregar-productos">
+                <form class="form-agregar-productos" >
 
                     <input type="text"placeholder="Ingresa un nombre" class="nombre-producto" data-nombre required>
                     <input type="text"placeholder="Ingresa un precio" class="precio-producto" data-precio required>
-                    <input type="url" placeholder="Ingresa la URL de la imagen" class="url-img-producto" data-imagen required>
+                    <input type="url" placeholder="Ingresa la URL de la imagen" class="imagen-url-producto" data-imagen required>
 
                     <div class="btn-productos">
                         <button class="btn-cargar" type="submit">Cargar</button>
@@ -57,6 +55,6 @@
     <footer>
         <p>© Desarrollado por Lucas Peralta - 2024</p>
     </footer>
-    <script type="module" src="./js/main.js"></script>
+    <script src="./js/mostrarProductos.js" type="module"></script>
 </body>
 </html>
