@@ -4,12 +4,13 @@ const formulario = document.querySelector("[data-formulario]")
 
 async function crearCard(evento){
 
+    evento.preventDefault()
+
     const nombre = document.querySelector("[data-nombre]").value
     const precio = document.querySelector("[data-precio]").value
     const imagen = document.querySelector("[data-imagen]").value
 
-    await conexionAPI.enviarProducto(imagen,titulo,precio)
-
+    await conexionAPI.enviarProducto(nombre, precio, imagen)
 }
 
-formulario.addEventListener("submit", evento =>crearCard(evento))
+formulario.addEventListener("submit", evento => crearCard(evento))

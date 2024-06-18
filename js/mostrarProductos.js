@@ -1,17 +1,17 @@
-import { conexionAPI } from "./conexionAPI.js";
+import { conexionAPI } from "./conexionAPI.js"
 
-const misProductos = document.querySelector("[data-product]")
+const listaProductos = document.querySelector(".contenedor-productos")
 
-function crearCard(imagen,titulo,precio){
+function crearCard(id, nombre, precio, imagen){
     const producto = document.createElement("div")
-    producto.className.add("productos-disponibles")
+    producto.classList.add("productos-disponibles")
 
     producto.innerHTML = `
       <div class="producto">
-        <img class="imagen-url-producto" src="${imagen}" alt="${titulo}">
+        <img class="imagen-url-producto" src="${imagen}" alt="Imagen del producto">
 
         <div class="nombre-producto">
-          <p>${titulo}</p>
+          <p>${nombre}</p>
         </div>
 
         <div class="precio-botton">
@@ -20,20 +20,20 @@ function crearCard(imagen,titulo,precio){
             <p>$${precio}</p>
           </div>
 
-          <div data-borrar class="btn-vaciar" id="${id}">
-            <img src="img/img-borrar.png" alt="borrar" class="img-borrar"/>
+          <div data-borrar class="btn-delete" id="${id}">
+            <img src="img/img-borrar.png" alt="borrar" class="img-borrar"";/>
           </div>
-
-        </div>
-      </div>`;
+          
+          </div>
+        </div>`;
 
       return producto;
 }
 
 async function listarProductos(){
 
-    const listAPI = conexionAPI.listarProductos()
+  const productsList = await conexionAPI.listarProductos()
 
-    listAPI.forEach(producto=>lista.appendChild(crearCard
-      (producto.imagen, producto.titulo,producto.precio,)))
+  productsList.map(product => listaProductos.appendChild(crearCard(product.id, product.nombre, product.precio, product.imagen)))
 }
+listarProductos()

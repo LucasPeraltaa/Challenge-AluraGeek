@@ -41,18 +41,19 @@ h2{
 
 /*productos disponibles*/
 
-.productos-disponibles{
+.lista-productos .contenedor-productos{ /*caja*/
+    width: 75%;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-
+    justify-content: space-between;
 }
 
-.producto{
+.productos-disponibles{  /*class en JS*/
     display: flex;
     align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    flex-direction: column;
     background-color: #7ec0ee;
     height: auto;
     width: 160px;
@@ -63,9 +64,33 @@ h2{
     text-align: center;
     margin: 0px 5px 10px 5px;
 }
-.productosItem:hover{
+.productos-disponibles:hover{
     transform: scale(1.1);
-    transition-duration: 2s;
+    transition-duration: 500ms;
+}
+
+.producto .imagen-url-producto {
+    width: 100%;
+    height: 160px;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+.btn-delete{
+    width: 30px;
+    height: 20px;
+    background-color: #cf5757;
+    border:solid 1px;
+    border-radius: 5px;
+    padding: 5px 0px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-delete:hover{
+    background-color: #af2929;
+}
+.btn-delete img{
+    width: 20px;
 }
 
 /*agrgear productos*/
@@ -102,6 +127,9 @@ input{
 input:hover{
     background-color: rgb(145, 197, 180);
 }
+
+/*botones formularios */
+
 .btn-productos{
     display: flex;
     justify-content: space-evenly;
@@ -128,7 +156,7 @@ input:hover{
 .btn-vaciar{
     width: 70px;
     height: 30px;
-    background-color: #ee7e7e;
+    background-color: #ed4c4c;
     border: 2px;
     border-radius: 5px;
     padding: 5px 0px;
@@ -136,8 +164,8 @@ input:hover{
 }
 
 .btn-vaciar:hover{
-    border-color: #eb6565;
-    background-color: #eb6565;
+    border-color: #ed4c4c;
+    background-color: #ed4c4c;
     color: #000000;
     font-weight: bolder;
     transform: scale(1.3);
@@ -155,3 +183,4 @@ p{
     font-size: 15px;
     font-weight: bold;
 }
+
