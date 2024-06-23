@@ -1,58 +1,46 @@
 {
-    "productos": [
-        {
-            "id": 1,
-            "nombre": "Frutos secos",
-            "precio": "1200",
-            "imagen": "https://acdn.mitiendanube.com/stores/001/157/846/products/delicioso-mix-de-frutos-secos-especial-muy-completo-d_nq_np_645997-mla26481477271_122017-f1-d45a81489e11c0475015871829056304-1024-1024.jpg"
-        },
-        {
-            "id": 2,
-            "nombre": "Frutos mojados",
-            "precio": "1500",
-            "imagen": "https://acdn.mitiendanube.com/stores/001/157/846/products/delicioso-mix-de-frutos-secos-especial-muy-completo-d_nq_np_645997-mla26481477271_122017-f1-d45a81489e11c0475015871829056304-1024-1024.jpg"
-        },
-        {
-            "id": 3,
-            "nombre": "Frutos secos gourmet",
-            "precio": "1300",
-"imagen": "https://acdn.mitiendanube.com/stores/001/157/846/products/delicioso-mix-de-frutos-secos-especial-muy-completo-d_nq_np_645997-mla26481477271_122017-f1-d45a81489e11c0475015871829056304-1024-1024.jpg"
-        },
-        {
-            "id": 4,
-            "nombre": "Frutos secos deluxe",
-            "precio": "1400",
-            "imagen": "https://acdn.mitiendanube.com/stores/001/157/846/products/delicioso-mix-de-frutos-secos-especial-muy-completo-d_nq_np_645997-mla26481477271_122017-f1-d45a81489e11c0475015871829056304-1024-1024.jpg"
-        },
-        {
-            "id": 5,
-            "nombre": "Frutos secos mixtos",
-            "precio": "1100",
-            "imagen": "https://acdn.mitiendanube.com/stores/001/157/846/products/delicioso-mix-de-frutos-secos-especial-muy-completo-d_nq_np_645997-mla26481477271_122017-f1-d45a81489e11c0475015871829056304-1024-1024.jpg"
-        },
-        {
-            "id": 6,
-            "nombre": "Frutos mojados premium",
-            "precio": "1600",
-            "imagen": "https://acdn.mitiendanube.com/stores/001/157/846/products/delicioso-mix-de-frutos-secos-especial-muy-completo-d_nq_np_645997-mla26481477271_122017-f1-d45a81489e11c0475015871829056304-1024-1024.jpg"
-        },
-        {
-            "id": 7,
-            "nombre": "Frutos secos exóticos",
-            "precio": "1700",
-            "imagen": "https://acdn.mitiendanube.com/stores/001/157/846/products/delicioso-mix-de-frutos-secos-especial-muy-completo-d_nq_np_645997-mla26481477271_122017-f1-d45a81489e11c0475015871829056304-1024-1024.jpg"
-        },
-        {
-            "id": 8,
-            "nombre": "Frutos secos seleccionados",
-            "precio": "1800",
-            "imagen": "https://acdn.mitiendanube.com/stores/002/146/808/products/mix-energy-plus1-5fea39963f8d9de00416545186319719-1024-1024.jpg"
-        },
-        {
-            "id": 9,
-            "nombre": "Frutos secos seleccionados mundial",
-            "precio": "1800",
-            "imagen": "https://acdn.mitiendanube.com/stores/002/146/808/products/mix-energy-plus1-5fea39963f8d9de00416545186319719-1024-1024.jpg"
-        }
-    ]
+  "productos": [
+    {
+      "id": "1",
+      "nombre": "Frutos secos",
+      "precio": "1200",
+      "imagen": "https://acdn.mitiendanube.com/stores/001/157/846/products/delicioso-mix-de-frutos-secos-especial-muy-completo-d_nq_np_645997-mla26481477271_122017-f1-d45a81489e11c0475015871829056304-1024-1024.jpg"
+    },
+    {
+      "id": "2",
+      "nombre": "Frutos mojados",
+      "precio": "1500",
+      "imagen": "https://acdn.mitiendanube.com/stores/001/157/846/products/delicioso-mix-de-frutos-secos-especial-muy-completo-d_nq_np_645997-mla26481477271_122017-f1-d45a81489e11c0475015871829056304-1024-1024.jpg"
+    },
+    {
+      "id": "3",
+      "nombre": "Frutos secos gourmet",
+      "precio": "1300",
+      "imagen": "https://acdn.mitiendanube.com/stores/001/157/846/products/delicioso-mix-de-frutos-secos-especial-muy-completo-d_nq_np_645997-mla26481477271_122017-f1-d45a81489e11c0475015871829056304-1024-1024.jpg"
+    },
+    {
+      "id": "4",
+      "nombre": "Frutos secos deluxe",
+      "precio": "1400",
+      "imagen": "https://acdn.mitiendanube.com/stores/001/157/846/products/delicioso-mix-de-frutos-secos-especial-muy-completo-d_nq_np_645997-mla26481477271_122017-f1-d45a81489e11c0475015871829056304-1024-1024.jpg"
+    },
+    {
+      "id": "5",
+      "nombre": "Frutos secos mixtos",
+      "precio": "1100",
+      "imagen": "https://acdn.mitiendanube.com/stores/001/157/846/products/delicioso-mix-de-frutos-secos-especial-muy-completo-d_nq_np_645997-mla26481477271_122017-f1-d45a81489e11c0475015871829056304-1024-1024.jpg"
+    },
+    {
+      "id": "6",
+      "nombre": "Frutos mojados premium",
+      "precio": "1600",
+      "imagen": "https://acdn.mitiendanube.com/stores/001/157/846/products/delicioso-mix-de-frutos-secos-especial-muy-completo-d_nq_np_645997-mla26481477271_122017-f1-d45a81489e11c0475015871829056304-1024-1024.jpg"
+    },
+    {
+      "id": "8be4",
+      "nombre": "pepona",
+      "precio": "777",
+      "imagen": "https://dynamic-media-cdn.tripadvisor.com/media/photo-s/02/4d/52/24/recreacion.jpg?w=600&h=-1&s=1"
+    }
+  ]
 }

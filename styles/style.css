@@ -1,6 +1,7 @@
 body{
     font-family: 'Roboto';
     background-color: rgb(217, 240, 232);
+    /*background-color: #000000;*/
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
