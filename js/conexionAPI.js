@@ -30,8 +30,20 @@ async function enviarProducto(nombre, precio, imagen){
     return conexionConvertida
 }
 
+const eliminarCard = async (id) =>{
+    try{
+        const res = await fetch(`http://localhost:3001/productos/${id}`,{
+            method: "DELETE"
+        })
+        return await res.json()
+    }catch(err){
+        return console.log(err)
+    }
+}
+
 
 export const conexionAPI = {
     listarProductos, 
     enviarProducto,
+    eliminarCard
 }

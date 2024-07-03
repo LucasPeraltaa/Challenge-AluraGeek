@@ -6,6 +6,8 @@ function crearCard(id, nombre, precio, imagen){
     const producto = document.createElement("div")
     producto.classList.add("productos-disponibles")
 
+    // aqui creamos la estructura de la card
+
     producto.innerHTML = `
       <div class="producto">
         <img class="imagen-url-producto" src="${imagen}" alt="Imagen del producto">
@@ -27,6 +29,14 @@ function crearCard(id, nombre, precio, imagen){
           </div>
         </div>`;
 
+        const eliminarCard = producto.querySelector(".btn-delete")
+        eliminarCard.addEventListener("click", () => {
+          conexionAPI.eliminarCard(id)
+          .then(() => {
+            producto.remove();
+          }).catch(err=>console.log(err))
+        })
+
       return producto;
 }
 
@@ -34,6 +44,6 @@ async function listarProductos(){
 
   const productsList = await conexionAPI.listarProductos()
 
-  productsList.map(product => listaProductos.appendChild(crearCard(product.id, product.nombre, product.precio, product.imagen)))
+  productsList.map(product => listaProductos.appendChild(crearCard(product.id,product.nombre, product.precio, product.imagen)))
 }
 listarProductos()

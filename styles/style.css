@@ -43,7 +43,7 @@ h2{
 /*productos disponibles*/
 
 .lista-productos .contenedor-productos{ /*caja*/
-    width: 75%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -89,6 +89,7 @@ h2{
 }
 .btn-delete:hover{
     background-color: #af2929;
+    
 }
 .btn-delete img{
     width: 20px;
@@ -145,6 +146,7 @@ input:hover{
     border-radius: 5px;
     padding: 5px 0px;
     font-weight: bold;
+    cursor: pointer;
 }
 .btn-cargar:hover{
     border-color: #78ee5b;
@@ -162,6 +164,7 @@ input:hover{
     border-radius: 5px;
     padding: 5px 0px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .btn-vaciar:hover{
@@ -185,3 +188,17 @@ p{
     font-weight: bold;
 }
 
+@media (max-width: 768px) {
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 2px;
+    }
+    .lista-productos .contenedor-productos{ /*caja*/
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
